@@ -1,0 +1,14 @@
+
+<!-- {{storeinfo.imgUrl}} -->
+<!-- <img src="{{storeinfo.imgUrl}}" alt="" srcset=""> -->
+<img *ngIf="isimageshown" [src]="Storeinfo.imgUrl" alt="" srcset="" class="img-fluid m-1">
+<button class="btn btn-danger" (click)="toogleimage()">toggle image</button>
+<h1>{{Storeinfo.Name}}</h1>
+<ul>
+    <!-- structire directive -->
+    <li *ngFor="let x of Storeinfo.branches">
+        {{x}}
+
+    </li>
+</ul>
+
